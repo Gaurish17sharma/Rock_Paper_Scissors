@@ -22,17 +22,16 @@
             <h2>Game Start</h2>
         </div>
 
-        <div Class="Score">
-            <h2 class="gametext" id="resulttext">Result:   </h2> </div>
+        <div id="resulttext">Result:  </div>
 
         <div class="Side">
             <div Class="Player">
                 <h2>Player:   0</h2>
-                <h3 id="pqmark">?</h3>
+                <h1 id="pqmark">?</h1>
                 <img
                   src=""
                   width="185.6"
-                  onerror="this.style.display='none'"
+                  height="185.6"
                   id="playerimg"
                   />
             </div>
@@ -41,13 +40,13 @@
 
             <div class="Computer">
                 <h2>Computer:   0</h2>
+                <h1 id="cqmark">?</h1>
                 <img
                  src=""
                  width="185.6"
-                 onerror="this.style.display='none'"
-                 id="compimg"
-                 />
-                <h3 id="cqmark">?</h3>           
+                 height="185.6"
+                 id="comperimg"
+                 />           
             </div>
         </div>
 
@@ -55,16 +54,15 @@
             <h2>Select Your move!!</h2></div>
 
         <div class="buttons">
-            <button id="rock"><img src="rock.png" alt="Rock" width="200" height="200"/></button>
-            <button id="paper"><img src="paper.png" alt="Paper"width="200" height="200" /></button>
-            <button id="scissors"><img src="scissors.png" alt="Scissors"width="200" height="200" /> </button>
+            <button id="rock"><img src="Rock.png" alt="Rock" width="200" height="200"/></button>
+            <button id="paper"><img src="Paper.png" alt="Paper"width="200" height="200" /></button>
+            <button id="scissors"><img src="Scissors.png" alt="Scissors"width="200" height="200" /> </button>
         </div>
-
-        <div class="Count">
-            <h2>Game Count:   0</h2>
+        
+        <div id="overlay"></div>
+        <div id="popup">
+           <p></p>
+           <button id="playagain">Play Again</button>
         </div>
-
-
-
-
-
+  </body>
+</html>
