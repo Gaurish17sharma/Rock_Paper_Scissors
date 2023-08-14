@@ -30,11 +30,10 @@
     font-family:'Times New Roman', Times, serif;
 }
 
-.Score {
+#resulttext {
     color: #667EEA;
     text-align: center;
-    padding: 10px;
-    margin-bottom:0px;
+    font-size: 30px;
 }
 
 .Side {
@@ -44,15 +43,17 @@
     justify-content:space-between;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 200px;
+    margin-right: 240px;
     margin-left: 240px;
     padding: 60px;
 }
+
 .vl{
     width: 3px;
     height: 250px;
     background-color:#667EEA;
     text-align: center;
+    position: relative;
 }
 
 .Choice{
@@ -85,3 +86,60 @@ button {
     display: flex;
     flex-flow: column;
 }
+
+footer {
+    font-size: 20px;
+    color: #667EEA;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+#playagain {
+    text-align: center;
+}
+
+.Side .Player h2{
+    margin-bottom: 30px;
+}
+
+.Side .Computer h2{
+    margin-bottom: 30px;
+}
+
+#popup {
+    visibility: hidden;
+    font-size: 1.3rem;
+    background-color: lightblue;
+    border-radius: 1em;
+    height: 7em;
+    width: 12em;
+    margin: -3.5em auto auto -6em;
+    padding: 1em;
+    border: 2px solid var(--text-links);
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 2;
+  }
+  #overlay {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  #popup button {
+    font-size: 1rem;
+    background-color: var(--base-darkest);
+    color: var(--text-clr);
+    padding: 0.8em;
+    margin: 0.8em;
+    margin-top: 1.2em;
+    border-radius: 0.5em;
+  }
+
